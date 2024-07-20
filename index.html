@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Sign up /</title>
+
+    <!-- Font google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+     <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="container-forms">
+            <div class="container-info">
+                <div class="info-item">
+                    <p>Have an accont?</p>
+                    <button class="btn">Log in</button>
+                </div>
+                <div class="info-item">
+                    <p>Don't have an accont?</p>
+                    <button class="btn">Sign up</button>
+                </div>
+            </div>
+            <div class="container-form">
+                <div class="form-item log-in">
+                    <h1>Login</h1>
+                    <input id="loginUsername" type="text" placeholder="Username" name="username">
+                    <input id="loginPassword" type="password" placeholder="Password" name="password">
+                    <div id="loginMessage"></div>
+                    <button type="submit" class="btn" onclick="login(event)">Log in</button>
+                </div>
+                <div class="form-item sign-up">
+                    <h1>Sign up</h1>
+                    <input id="regEmail" type="email" placeholder="Email" name="email">
+                    <input id="regFullName" type="text" placeholder="Fullname" name="Fullname">
+                    <input id="regUsername" type="text" placeholder="Username" name="username">
+                    <input id="regPassword" type="password" placeholder="Password" name="password">
+                    <div id="regMessage"></div>
+                    <button type="submit" class="btn" onclick="register(event)">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Main JS -->
+    <script src="./main.js"></script>
+</body>
+</html>
